@@ -1,0 +1,6 @@
+name: llbio
+channels:
+  - defaults
+  - bioconda
+dependencies:
+  - biopython
