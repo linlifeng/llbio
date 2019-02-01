@@ -4,3 +4,6 @@ channels:
   - bioconda
 dependencies:
   - biopython
+  - bedtools=2.25.0
+  - scikit-bio
+  - numpy
