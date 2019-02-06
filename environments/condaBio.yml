@@ -7,3 +7,7 @@ dependencies:
   - bedtools=2.25.0
   - scikit-bio
   - numpy
+  - networkx
+  - snakemake
+  - tabulate
+  - graphviz
