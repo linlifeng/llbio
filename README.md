@@ -5,7 +5,7 @@ nothing fancy.
 nothing proprietary should be found here. 
 
 ## setting up environment:
-1. gitclone thie repo 
-2. add to your path  PATH="/path/to/llbio/plotting/:/path/to/llbio/primerDesign/:/path/to/llbio/tabFileProcessing/:$PATH"  
-3. set up environment:  conda env create -f <pathTo_condaBio.yml>
+1. gitclone thie repo to your home dir.
+2. add to your path PATH="~/llbio/fastaProcessing/:~/llbio/plotting/:~/llbio/primerDesign/:~/llbio/tabFileProcessing/:~/llbio/jsonFileProcessing/:$PATH"  
+3. set up environment:  conda env create -f ~/llbio/environments/condaBio.yml 
 
