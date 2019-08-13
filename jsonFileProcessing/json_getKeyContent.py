@@ -70,7 +70,7 @@ for key in keys:
     #print(key)
 
 for t in ttype:
-    print t
+    print(t)
     pass
 
 #for q in qualities:

@@ -21,7 +21,7 @@ for l in f:
     #print l
     json_parsed = pandas.read_json(l)
     json_csv = json_parsed.to_csv(sep='\t')
-    print json_csv
-    #print json_parsed
+    #print(json_csv)
+    print(json_parsed)
 
 f.close()
