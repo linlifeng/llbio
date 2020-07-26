@@ -1,0 +1,9 @@
+PATH=$PATH:/Users/lifenglin/llbio/fastaProcessing/ # Add custom bins to PATH
+PATH=$PATH:/Users/lifenglin/llbio/tabFileProcessing/ # Add custom bins to PATH
+PATH=$PATH:/Users/lifenglin/llbio/publicDBInteractions/ # Add custom bins to PATH
+
+PATH=$PATH:/Users/lifenglin/llbio/plotting/ # Add custom bins to PATH
+PATH=$PATH:/Users/lifenglin/llbio/primerDesign/ # Add custom bins to PATH
+PATH=$PATH:/Users/lifenglin/llbio/jsonFileProcessing/ # Add custom bins to PATH
+
+
