@@ -55,5 +55,5 @@ while windowStart < alnLen:
         sequence = dic[seqName]
         frag = sequence[windowStart:windowEnd]
         versions.append(frag)
-    print "%s\t%s"%(windowName, len(set(versions)))
+    print("%s\t%s"%(windowName, len(set(versions))))
     windowStart = windowEnd

@@ -43,7 +43,7 @@ for l in f:
 		skipped += 1
 		continue
 	if float(val) >= minVal and float(val) <= maxVal:
-		print l.rstrip()
+		print(l.rstrip())
 
 if not skipped == 0:
 	lf.write("%s lines skipped."%skipped)

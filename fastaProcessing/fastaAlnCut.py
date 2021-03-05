@@ -26,6 +26,6 @@ for record in records:
     seqShortName = record.id
     sequence = record.seq
     frag = sequence[start-1:end]
-    print "%s_%s_%s\t%s"%(seqName, start, end, frag)
+    print("%s_%s_%s\t%s"%(seqName, start, end, frag))
 
 f.close()

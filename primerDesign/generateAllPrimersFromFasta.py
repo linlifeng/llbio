@@ -25,8 +25,8 @@ def genFrag(name, seq, length, step):
     while i + length <= len(seq):
         start = i
         end = i + length
-        print ">%s_%s-%s"%(name, start+1, end)
-        print seq[start: end]
+        print(">%s_%s_%s"%(name, start+1, end))
+        print(seq[start: end])
         i += step
 
 f = open(fname, 'r')

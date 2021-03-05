@@ -20,6 +20,6 @@ for record in records:
     seqName = record.description
     seqShortName = record.id
     sequence = record.seq
-    print ">%s_rc\n%s"%(seqShortName, sequence.reverse_complement())
+    print(">%s_rc\n%s"%(seqShortName, sequence.reverse_complement()))
 
 f.close()

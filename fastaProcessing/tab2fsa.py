@@ -13,4 +13,4 @@ except:
 
 for l in f:
     name, seq = l.rstrip().split('\t')[:2]
-    print ">" + name + "\n"  + seq 
+    print(">" + name + "\n"  + seq)

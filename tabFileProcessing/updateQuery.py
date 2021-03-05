@@ -45,5 +45,5 @@ for l in f:
     else:
         toAppend = ['NULL']
     for hit in toAppend:
-        print l.rstrip() + '\t' + hit.rstrip()
+        print(l.rstrip() + '\t' + hit.rstrip())
 f.close()

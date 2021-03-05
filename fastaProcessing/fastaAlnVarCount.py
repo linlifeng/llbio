@@ -6,12 +6,13 @@
 4. prefix of fragments
 '''
 
+from Bio import SeqIO
+
 def getUniCnt(List):
     return len(set(List))
 
 def fastaHash(fastaFname):
     fastaDict = {}
-    from Bio import SeqIO
     fastaF = open(fastaFname, 'r')
     records = SeqIO.parse(fastaF, 'fasta')
     longestLen = 0

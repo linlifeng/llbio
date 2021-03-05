@@ -22,8 +22,8 @@ except:
 Tm  = '%0.2f'%mt.Tm_NN(myseq, Na=100, dnac1=900, dnac2=0)
 Len = len(myseq)
 
-print "Tm       :   %s"%Tm
-print "length   :   %s"%Len
+print("Tm       :   %s"%Tm)
+print("length   :   %s"%Len)
 # guoying's production code
 # fwd_primerTm= float('%0.2f' % mt.Tm_NN(fwd_primer, Na=param['SALTCONC'], dnac1=param['PRIMERCONC'], dnac2=0))
 #SALTCONC=100 # in mM.

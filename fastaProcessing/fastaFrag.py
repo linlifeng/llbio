@@ -31,11 +31,11 @@ for record in records:
     fragEnd = fragStart + fragSize
     while fragEnd <= len(sequence):
         i += 1
-        print ">%s_seg%s\n%s"%(seqShortName, i, sequence[fragStart:fragEnd])
+        print(">%s_seg%s_%s_%s\n%s"%(seqShortName, i, fragStart, fragEnd, sequence[fragStart:fragEnd]))
         fragStart = fragStart + step
         fragEnd = fragStart + fragSize
     if not fragStart  >= len(sequence) :
-        print ">%s_seg%s\n%s"%(seqShortName, i + 1, sequence[fragStart:len(sequence)])
+        print(">%s_seg%s_%s_%s\n%s"%(seqShortName, i + 1, fragStart, fragEnd,sequence[fragStart:len(sequence)]))
         
 
 f.close()

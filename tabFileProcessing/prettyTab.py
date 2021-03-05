@@ -8,6 +8,7 @@
 from sys import argv, exit
 from tabulate import tabulate
 from os import system
+from fpdf import FPDF
 
 #print(tabulate([['Alice', 24], ['Bob', 19]], headers=['Name', 'Age']))
 
@@ -31,7 +32,22 @@ for l in f:
     tabs.append(segs)
 f.close()
 
+pdf = FPDF()
+pdf.add_page()
+pdf.set_font('Courier', size=15)
+
+
 if header.upper() == 'Y':
     print(tabulate(tabs, headers=headers))
+    for l in tabulate(tabs, headers=headers).split("\n"):
+        pdf.cell(200, 10, txt=l, ln=1, align='L')
+
 else:
     print(tabulate(tabs))
+    for l in tabulate(tabs).split("\n"):
+        pdf.cell(200, 10, txt=l, ln=1, align='L')
+
+
+
+
+pdf.output("prettyTab.pdf")

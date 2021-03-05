@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python
 '''
 1. input file, fasta format
 
@@ -19,7 +19,7 @@ inFasta = False
 
 for l in open(inFname, 'r'):
     if l[0] == '>':
-        print "this input is detected as a fasta format. Converting to tab."
+        print("this input is detected as a fasta format. Converting to tab.")
         inFasta = True
         break
 
@@ -34,7 +34,7 @@ if inFasta:
          outf.write("%s\t%s\n"%(record.description, record.seq))
 
 else:
-    print "this input is detected as non-fasta format. Converting to fasta."
+    print("this input is detected as non-fasta format. Converting to fasta.")
     outFname = path.basename(inFname) + '.fsa'
 
     inf = open(inFname, 'r')

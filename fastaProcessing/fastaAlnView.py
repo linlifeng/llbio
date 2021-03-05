@@ -70,8 +70,8 @@ while windowStart < alnLen:
         windowEnd = alnLen
 
     offset = windowEnd - windowStart - len(str(windowStart)) - len(str(windowEnd))
-    print "%*s\t%s"%(tagWidth, "Pos", windowStart + 1) + ' '*offset + str(windowEnd)
-    print "%*s\t%s"%(tagWidth, "Ref", ref[1][windowStart:windowEnd])
+    print("%*s\t%s"%(tagWidth, "Pos", windowStart + 1) + ' '*offset + str(windowEnd))
+    print("%*s\t%s"%(tagWidth, "Ref", ref[1][windowStart:windowEnd]))
 
     for seqName in dic:
         sequence = dic[seqName]
@@ -82,9 +82,9 @@ while windowStart < alnLen:
 .replace('C','\033[45mC\033[0m')\
 .replace('G','\033[46mG\033[0m')
         if color.upper() == 'Y' or color.upper() == 'YES':
-            print "%*s\t%s"%(tagWidth, seqName[:tagWidth], coloredFrag)
+            print("%*s\t%s"%(tagWidth, seqName[:tagWidth], coloredFrag))
         else:
-            print "%*s\t%s"%(tagWidth, seqName[:tagWidth], frag)
+            print("%*s\t%s"%(tagWidth, seqName[:tagWidth], frag))
 
     windowStart = windowEnd
-    print "\n"
+    print("\n")

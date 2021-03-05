@@ -19,4 +19,6 @@ for record in records:
     seqName = record.description
     seqShortName = record.id
     sequence = record.seq
-    print("%s\t%s\t%s"%(seqShortName, len(sequence), seqName))
+    clean_seq = str(sequence).replace('-', '')
+
+    print("%s\t%s\t%s\t%s" % (seqName, len(sequence), len(clean_seq), seqShortName))
