@@ -3,12 +3,14 @@
 '''
 1. fasta file as input
 
+
 returns base composition
 '''
 
 from sys import argv, exit
 from Bio import SeqIO
 from os import system
+
 
 try:
     fname = argv[1]
